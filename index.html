@@ -1,0 +1,38 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="app.css">
+  <script src="lory.min.js"></script>
+  <script>
+  'use strict';
+  document.addEventListener('DOMContentLoaded', function () {
+          var simple = document.querySelector('.js_simple');
+
+          lory(simple, {
+              infinite: 1
+          });
+      });
+  </script>
+</head>
+<body>
+<div class="slider js_simple simple">
+  <div class="frame js_frame">
+      <ul class="slides js_slides">
+          <li class="js_slide">1</li>
+          <li class="js_slide">2</li>
+          <li class="js_slide">3</li>
+          <li class="js_slide">4</li>
+          <li class="js_slide">5</li>
+         <li class="js_slide">6</li>
+      </ul>
+  </div>
+
+  <span class="js_prev prev">
+    <button>left</button>
+  </span>
+
+  <span class="js_next next">
+    <button>right</button>
+  </span>
+</div>
+</body>
+</html>
